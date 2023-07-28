@@ -14,6 +14,14 @@ const userSchema = new Schema(
       unique: true,
       match: [/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "You are invalid"],
     },
+    // startDate: {
+    //   type: Date,
+    //   default: Date.now(),
+    // },
+    // endDate: {
+    //   type: Date,
+    //   default: () => new Date(+new Date() + 84 * 24 * 60 * 60 * 1000),
+    // },
     thoughts: [
       {
         type: Schema.Types.ObjectId,

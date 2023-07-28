@@ -12,9 +12,7 @@ const reactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: true,
-      maxlength: 50,
-      minlength: 4,
-      default: "Unnamed assignment",
+      maxlength: 280,
     },
     username: {
       type: String,
